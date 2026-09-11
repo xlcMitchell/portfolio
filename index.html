@@ -782,11 +782,24 @@
                         </div>
 
                         <div class="project-media" aria-label="Media preview for Workshop Project Cost Tracer">
-                            <div class="placeholder-grid">
-                                <div class="placeholder-box">App Interface View</div>
-                                <div class="placeholder-box">Cost Tracking Screen</div>
-                                <div class="placeholder-box">UI Walkthrough</div>
-                                <div class="placeholder-box">GitHub Code Preview</div>
+                            <div class="featured-media">
+                                <img id="auto-main" src="images/auto1.png" alt="Workshop Cost Tracer - Main Preview" onerror="handleImgError(this, 'Workshop Cost Tracer Main Preview')">
+                                <div class="img-fallback">Workshop Cost Tracer Main Preview</div>
+                            </div>
+                            
+                            <div class="thumbnail-grid">
+                                <div class="thumb-item active" onclick="switchImage('auto-main', 'images/auto1.png', this)">
+                                    <img src="images/auto1.png" alt="Thumbnail 1">
+                                </div>
+                                <div class="thumb-item" onclick="switchImage('auto-main', 'images/auto2.png', this)">
+                                    <img src="images/auto2.png" alt="Thumbnail 2">
+                                </div>
+                                <div class="thumb-item" onclick="switchImage('auto-main', 'images/auto3.png', this)">
+                                    <img src="images/auto3.png" alt="Thumbnail 3">
+                                </div>
+                                <div class="thumb-item" onclick="switchImage('auto-main', 'images/auto4.png', this)">
+                                    <img src="images/auto4.png" alt="Thumbnail 4">
+                                </div>
                             </div>
                         </div>
 
@@ -861,15 +874,15 @@
                             <div class="details-grid">
                                 <div class="details-block">
                                     <h4>Hardware Integration</h4>
-                                    <p>ESP8266 NodeMCU microcontroller connected via MQTT to stream telemetry and trigger relay actuation.</p>
+                                    <p>ESP8266 Wi-Fi microcontroller interfacing with soil moisture sensors and pump relays via custom PCB circuitry.</p>
                                 </div>
                                 <div class="details-block">
-                                    <h4>Mobile Control</h4>
-                                    <p>Custom Android application designed to track real-time moisture telemetry and provide remote control.</p>
+                                    <h4>Software Stack</h4>
+                                    <p>Native Android Java client connected over MQTT broker protocol for bi-directional remote telemetry.</p>
                                 </div>
                                 <div class="details-block">
-                                    <h4>Outcome</h4>
-                                    <p>Fully functional IoT system managing real-world physical pump triggers based on soil sensor thresholds.</p>
+                                    <h4>Key Features</h4>
+                                    <p>Real-time moisture updates, remote manual override, and autonomous threshold triggers.</p>
                                 </div>
                             </div>
                         </div>
@@ -879,97 +892,68 @@
             </div>
         </section>
 
+        <!-- SERVICES -->
         <section id="services">
             <div class="container">
-                <span class="section-label">Services</span>
+                <span class="section-label">Capabilities</span>
                 <h2 class="section-title">What I Do</h2>
-                <p class="section-intro">Custom web and software solutions tailored to your goals.</p>
+                <p class="section-intro">Full-stack web development and software solutions for business and desktop applications.</p>
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <h3 class="service-title">Websites</h3>
-                        <p class="service-desc">Clean, modern websites built to showcase your business or personal brand effectively across all devices.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3 class="service-title">Web Applications</h3>
-                        <p class="service-desc">Dynamic, database-driven web tools built with custom functionality to solve specific workflow needs.</p>
+                        <h3 class="service-title">Websites & Web Apps</h3>
+                        <p class="service-desc">Custom responsive websites and interactive web applications built with clean semantic HTML, modern CSS, and modern JavaScript.</p>
                     </div>
                     <div class="service-card">
                         <h3 class="service-title">Desktop Software</h3>
-                        <p class="service-desc">Tailored desktop tools designed to streamline business operations and internal tracking processes.</p>
+                        <p class="service-desc">Native desktop software built for operational efficiency using C#, .NET, WPF, and local database storage solutions.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 class="service-title">Mobile Applications</h3>
+                        <p class="service-desc">Designing custom mobile applications with clean interfaces and local database storage</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <span class="section-label">Skills</span>
-                <h2 class="section-title">Technologies</h2>
-                <p class="section-intro">Tools and languages I use to build solutions.</p>
-
-                <div class="tech-grid">
-                    <div class="tech-group">
-                        <h4>Frontend</h4>
-                        <ul class="tech-list">
-                            <li>HTML / CSS</li>
-                            <li>JavaScript</li>
-                            <li>WPF (XAML)</li>
-                        </ul>
-                    </div>
-                    <div class="tech-group">
-                        <h4>Backend & Languages</h4>
-                        <ul class="tech-list">
-                            <li>C# / .NET</li>
-                            <li>Java</li>
-                            <li>PHP</li>
-                        </ul>
-                    </div>
-                    <div class="tech-group">
-                        <h4>Databases & IoT</h4>
-                        <ul class="tech-list">
-                            <li>SQLite / MySQL</li>
-                            <li>ESP8266 / Arduino</li>
-                            <li>MQTT Protocol</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <!-- CONTACT -->
         <section id="contact">
-            <div class="container contact-container">
-                <div class="contact-info">
-                    <span class="section-label">Contact</span>
-                    <h2 class="section-title">Get in Touch</h2>
-                    <p class="section-intro">Have a project in mind or want to collaborate? Send a message or reach out directly.</p>
-                    <ul class="contact-links">
-                        <li><strong>GitHub:</strong> <a href="https://github.com/xlcMitchell" target="_blank" rel="noopener noreferrer">github.com/xlcMitchell</a></li>
-                    </ul>
-                </div>
+            <div class="container">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact</h2>
+                <p class="section-intro">Have a project in mind or looking for a developer? Send a message below.</p>
 
-                <form class="contact-form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                <div class="contact-container">
+                    <div>
+                        <p>I'm currently available for freelance work, contract roles, and collaboration opportunities.</p>
+                        <ul class="contact-links">
+                            <li><strong>GitHub:</strong> <a href="https://github.com/xlcMitchell" target="_blank" rel="noopener noreferrer">github.com/xlcMitchell</a></li>
+                        </ul>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>&copy; 2026 Mitchell. All rights reserved.</p>
+            <p>&copy; Mitchell. All rights reserved.</p>
             <ul class="footer-links">
                 <li><a href="#work">Work</a></li>
                 <li><a href="#services">Services</a></li>
@@ -979,58 +963,48 @@
     </footer>
 
     <script>
-        // Image Switcher for Featured View
-        function switchImage(targetId, newSrc, thumbElement) {
-            const mainImg = document.getElementById(targetId);
-            if (mainImg) {
-                mainImg.src = newSrc;
-                mainImg.style.display = 'block';
-                
-                const fallback = mainImg.parentElement.querySelector('.img-fallback');
-                if (fallback) fallback.style.display = 'none';
-            }
-
-            if (thumbElement) {
-                const parentGrid = thumbElement.parentElement;
-                const siblings = parentGrid.querySelectorAll('.thumb-item');
-                siblings.forEach(sibling => sibling.classList.remove('active'));
-                thumbElement.classList.add('active');
-            }
-        }
-
-        // Image Fallback Handling
-        function handleImgError(imgElement, label) {
-            imgElement.style.display = 'none';
-            const fallback = imgElement.parentElement.querySelector('.img-fallback');
-            if (fallback) {
-                fallback.style.display = 'flex';
-            }
-        }
-
-        // Mobile Navigation Toggle
+        // Toggle mobile navigation menu
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
-
         if (menuToggle && navLinks) {
             menuToggle.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
         }
 
-        // Expandable Case Study Toggle
-        const toggleButtons = document.querySelectorAll('.toggle-details');
-
-        toggleButtons.forEach(button => {
+        // Toggle expandable project details
+        document.querySelectorAll('.toggle-details').forEach(button => {
             button.addEventListener('click', () => {
-                const projectCard = button.closest('.project-card');
-                const projectDetails = projectCard.querySelector('.project-details');
-                const isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-                button.setAttribute('aria-expanded', !isExpanded);
-                button.textContent = isExpanded ? 'View Details' : 'Hide Details';
-                projectDetails.classList.toggle('open');
+                const card = button.closest('.project-card');
+                const details = card.querySelector('.project-details');
+                const isOpen = details.classList.contains('open');
+                
+                details.classList.toggle('open');
+                button.setAttribute('aria-expanded', !isOpen);
+                button.textContent = isOpen ? 'View Details' : 'Hide Details';
             });
         });
+
+        // Switch main image on thumbnail click
+        function switchImage(mainImgId, newSrc, thumbElement) {
+            const mainImg = document.getElementById(mainImgId);
+            if (mainImg) {
+                mainImg.src = newSrc;
+            }
+            const grid = thumbElement.parentElement;
+            grid.querySelectorAll('.thumb-item').forEach(item => item.classList.remove('active'));
+            thumbElement.classList.add('active');
+        }
+
+        // Fallback handler if local image files are missing
+        function handleImgError(imgElement, label) {
+            imgElement.style.display = 'none';
+            const fallback = imgElement.nextElementSibling;
+            if (fallback && fallback.classList.contains('img-fallback')) {
+                fallback.style.display = 'flex';
+                fallback.textContent = label;
+            }
+        }
     </script>
 </body>
 </html>
