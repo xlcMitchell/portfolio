@@ -822,71 +822,78 @@
                     </article>
 
                     <!-- PROJECT 3: Smart Plant Watering System -->
-                    <article class="project-card">
-                        <div class="project-info">
-                            <div class="project-meta">
-                                <span class="project-category">Personal Project · Android & IoT</span>
-                                <span class="badge complete">Complete</span>
-                            </div>
-                            <h3 class="project-title">Smart Plant Watering System</h3>
-                            <p class="project-desc">
-                                An automated plant watering system combining an Android application, ESP8266 controller, custom PCB and MQTT communication. Demonstrates end-to-end integration across software, networking, embedded hardware, and physical devices.
-                            </p>
-                            <ul class="project-goals">
-                                <li>Monitor soil moisture readings remotely</li>
-                                <li>Control water pump operation across different Wi-Fi networks</li>
-                                <li>Configure automatic threshold-based watering schedules</li>
-                            </ul>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">Android Studio</span>
-                                <span class="tech-tag">ESP8266</span>
-                                <span class="tech-tag">Arduino</span>
-                                <span class="tech-tag">MQTT</span>
-                                <span class="tech-tag">PCB Design</span>
-                            </div>
-                            <button class="btn btn-secondary btn-sm toggle-details" aria-expanded="false">View Details</button>
-                        </div>
+<article class="project-card">
+    <div class="project-info">
+        <div class="project-meta">
+            <span class="project-category">Personal Project · Android & IoT</span>
+            <span class="badge complete">Complete</span>
+        </div>
+        <h3 class="project-title">Smart Plant Watering System</h3>
+        <p class="project-desc">
+            An automated plant watering system combining an Android application, ESP8266 controller, custom PCB and MQTT communication. Demonstrates end-to-end integration across software, networking, embedded hardware, and physical devices.
+        </p>
+        <ul class="project-goals">
+            <li>Monitor soil moisture readings remotely</li>
+            <li>Control water pump operation across different Wi-Fi networks</li>
+            <li>Configure automatic threshold-based watering schedules</li>
+        </ul>
+        <div class="tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Android Studio</span>
+            <span class="tech-tag">ESP8266</span>
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">MQTT</span>
+            <span class="tech-tag">PCB Design</span>
+        </div>
+        <button class="btn btn-secondary btn-sm toggle-details" aria-expanded="false">View Details</button>
+    </div>
 
-                        <div class="project-media" aria-label="Media preview for Smart Plant Watering System">
-                            <div class="featured-media">
-                                <img id="water-main" src="images/water1.png" alt="Smart Plant Watering App - Main Preview" onerror="handleImgError(this, 'App Telemetry Screen')">
-                                <div class="img-fallback">App Telemetry Screen</div>
-                            </div>
-                            
-                            <div class="thumbnail-grid">
-                                <div class="thumb-item active" onclick="switchImage('water-main', 'images/water1.png', this)">
-                                    <img src="images/water1.png" alt="Thumbnail 1">
-                                </div>
-                                <div class="thumb-item" onclick="switchImage('water-main', 'images/water2.png', this)">
-                                    <img src="images/water2.png" alt="Thumbnail 2">
-                                </div>
-                                <div class="thumb-item" onclick="switchImage('water-main', 'images/water3.png', this)">
-                                    <img src="images/water3.png" alt="Thumbnail 3">
-                                </div>
-                                <div class="thumb-item" onclick="switchImage('water-main', 'images/water4.png', this)">
-                                    <img src="images/water4.png" alt="Thumbnail 4">
-                                </div>
-                            </div>
-                        </div>
+    <div class="project-media" aria-label="Media preview for Smart Plant Watering System">
+        <div class="featured-media">
+            <!-- YouTube Embed Wrapper for Responsive 16:9 Aspect Ratio -->
+            <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--radius-sm, 8px);">
+                <iframe src="https://www.youtube.com/embed/zX-WmBYVB4g" 
+                        title="Smart Plant Watering System Demo" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        
+        <div class="thumbnail-grid">
+            <div class="thumb-item active" onclick="switchImage('water-main', 'images/water1.png', this)">
+                <img src="images/water1.png" alt="Thumbnail 1">
+            </div>
+            <div class="thumb-item" onclick="switchImage('water-main', 'images/water2.png', this)">
+                <img src="images/water2.png" alt="Thumbnail 2">
+            </div>
+            <div class="thumb-item" onclick="switchImage('water-main', 'images/water3.png', this)">
+                <img src="images/water3.png" alt="Thumbnail 3">
+            </div>
+            <div class="thumb-item" onclick="switchImage('water-main', 'images/water4.png', this)">
+                <img src="images/water4.png" alt="Thumbnail 4">
+            </div>
+        </div>
+    </div>
 
-                        <div class="project-details">
-                            <div class="details-grid">
-                                <div class="details-block">
-                                    <h4>Hardware Integration</h4>
-                                    <p>ESP8266 Wi-Fi microcontroller interfacing with soil moisture sensors and pump relays via custom PCB circuitry.</p>
-                                </div>
-                                <div class="details-block">
-                                    <h4>Software Stack</h4>
-                                    <p>Native Android Java client connected over MQTT broker protocol</p>
-                                </div>
-                                <div class="details-block">
-                                    <h4>Key Features</h4>
-                                    <p>Real-time moisture updates, remote manual override, and autonomous threshold triggers.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+    <div class="project-details">
+        <div class="details-grid">
+            <div class="details-block">
+                <h4>Hardware Integration</h4>
+                <p>ESP8266 Wi-Fi microcontroller interfacing with soil moisture sensors and pump relays via custom PCB circuitry.</p>
+            </div>
+            <div class="details-block">
+                <h4>Software Stack</h4>
+                <p>Native Android Java client connected over MQTT broker protocol</p>
+            </div>
+            <div class="details-block">
+                <h4>Key Features</h4>
+                <p>Real-time moisture updates, remote manual override, and autonomous threshold triggers.</p>
+            </div>
+        </div>
+    </div>
+</article>
 
                 </div>
             </div>
